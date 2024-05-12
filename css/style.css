@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Climate+Crisis&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nixie+One&family=Numans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sedgwick+Ave+Display&family=Staatliches&family=Teko:wght@300..700&display=swap');
+
+:root {
+  /* PRIMARY */
+
+  --Softblue-COLOR: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Verydark-blue-MainBG: hsl(217, 54%, 11%);
+  --Verydark-blue-CardBG: hsl(216, 50%, 16%);
+  --Verydark-blue-Line: hsl(215, 32%, 27%);
+
+  /* Font Size */
+
+  --FontSize-paragraph: 18px;
+
+  /* FONT FAMILY */
+
+  --fontFamily-Outfit: "Outfit", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fontFamily-Outfit);
+  font-size: var(--FontSize-paragraph);
+  background: var(--Verydark-blue-MainBG);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+
+.white-title {
+  color: var(--White);
+}
+
+.paragraph {
+  color: var(--Softblue-COLOR);
+}
+
+.nft {
+  color: var(--Cyan);
+}
+
+/* CARD FORM STYLING */
+
+.card-form {
+  background: var(--Verydark-blue-CardBG);
+  margin: 4rem 34rem;
+  padding: 1.5rem;
+  height: 74vh;
+  box-shadow: 0 5px 6px rgba(0, 0, var(--Verydark-blue-MainBG), 0.7);
+  border-radius: 1rem;
+}
+
+/* Card Image */
+
+.card-image {
+  background: url("../images/image-equilibrium.jpg") no-repeat center center/cover;
+  height: 37vh;
+  border-radius: 1rem;
+}
+
+/* Card Text Styling */
+
+.card-text {
+  margin-top: 1.5rem;
+}
+
+.card-text h3 {
+  font-weight: 600;
+}
+
+.card-text p {
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 1rem;
+}
+
+/* * Card Time Styling */
+
+.card-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.card-time img {
+  margin-right: 10px;
+}
+
+.card-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Horizontale rule */
+
+.hr {
+  border: 0.5px solid var(--Verydark-blue-Line);
+  margin-top: 1.5rem;
+}
+
+/* Card Profile styling */
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card-profile img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--White);
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.card-profile h4 {
+  font-weight: 300;
+}
